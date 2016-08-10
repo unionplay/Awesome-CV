@@ -407,7 +407,7 @@
 % Usage: \makecvheader
 \newcommand*{\makecvheader}{%
   \begin{center}
-    \headerfirstnamestyle{\@firstname}\headerlastnamestyle{{}\acvHeaderNameDelim\@lastname}%
+    \headerlastnamestyle{\@lastname}\headerfirstnamestyle{{}\acvHeaderNameDelim\@firstname}%
     \\[\acvHeaderAfterNameSkip]%
     \ifthenelse{\isundefined{\@position}}{}{\headerpositionstyle{\@position\\[\acvHeaderAfterPositionSkip]}}%
     \ifthenelse{\isundefined{\@address}}{}{\headeraddressstyle{\@address\\[\acvHeaderAfterAddressSkip]}}%
